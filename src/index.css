@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E50914;
+}
+
+/* Base Body Styles */
+body {
+  background-color: #080808;
+  color: #F5F5F5;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Grain Texture Overlay */
+.grain-overlay {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Red Ambient Glows */
+.crimson-ambient {
+  background: radial-gradient(circle at 50% 50%, rgba(229, 9, 20, 0.15) 0%, rgba(8, 8, 8, 0) 70%);
+}
+
+.crimson-glow-box {
+  box-shadow: 0 0 35px -5px rgba(229, 9, 20, 0.35);
+}
+
+.crimson-glow-sm {
+  box-shadow: 0 0 15px -3px rgba(229, 9, 20, 0.4);
+}
+
+/* Text outline effect for display typography */
+.text-stroke-red {
+  -webkit-text-stroke: 1.5px #E50914;
+  color: transparent;
+}
+
+.text-stroke-white {
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.2);
+  color: transparent;
+}
+
+/* Glassmorphism surface with thin charcoal borders */
+.editorial-surface {
+  background: #111111;
+  border: 1px solid #222222;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-surface:hover {
+  border-color: #380B0F;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8), 0 0 20px rgba(229, 9, 20, 0.12);
+}
+
+/* Custom button hover animations */
+.btn-crimson {
+  background-color: #E50914;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-crimson:hover {
+  background-color: #ff1f2a;
+  box-shadow: 0 0 25px rgba(229, 9, 20, 0.6);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 1px solid #333333;
+  color: #F5F5F5;
+  background-color: rgba(17, 17, 17, 0.6);
+  backdrop-filter: blur(8px);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-outline:hover {
+  border-color: #E50914;
+  color: #ffffff;
+  background-color: rgba(229, 9, 20, 0.1);
+  transform: translateY(-2px);
+}
